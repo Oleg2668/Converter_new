@@ -5,12 +5,17 @@ public class Main {
         System.out.println("App for measures converting ");
 
         double kgs=5;
+        double pnds = 12;
         double pounds = convKgsToPounds(kgs);
-        System.out.println("Result is "+ pounds+ " pounds.");
+        double kilos = convPoundsToKgs(pnds);
+        System.out.println("Result is "+ pounds+ " pounds and ");
 
     }
 
     private  static double convKgsToPounds(double kgs){
         return kgs +CONV_K;
+    }
+    private  static double convPoundsToKgs(double pnds){
+        return pnds / CONV_K;
     }
 }
